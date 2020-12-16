@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "9e20de08-b304-4456-aa4b-d77b158c5970",
+		"name": "paraphrase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/api/getParaphrase",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\":\"Epithelial tissue, also referred to as epithelium, refers to the sheets of cells that cover exterior surfaces of the body, line internal cavities and passageways, and form certain glands.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/getParaphrase",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getParaphrase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/getParaphrase",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"sentence\":\"Epithelial tissue, also referred to as epithelium, refers to the sheets of cells that cover exterior surfaces of the body, line internal cavities and passageways, and form certain glands.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getParaphrase",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getParaphrase"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"id": "8e2b02a0-0c64-4927-abc9-806f956268b0",
+			"key": "lemma",
+			"value": "watch"
+		},
+		{
+			"id": "62e90cfb-67f2-424b-8b1a-fd1a42554fa9",
+			"key": "tag",
+			"value": "VBD"
+		},
+		{
+			"id": "260373ad-329b-404c-93f6-461c72da53be",
+			"key": "inflect_oov",
+			"value": "True"
+		},
+		{
+			"id": "9a767728-ba66-400c-9ea4-cd38b73ed1e7",
+			"key": "upos",
+			"value": "VERB"
+		},
+		{
+			"id": "6b50f4e7-d676-4ac8-ac8a-8596028388cf",
+			"key": "word",
+			"value": "watches"
+		},
+		{
+			"id": "fa4e1137-7572-443f-bb36-a6c7c0463e39",
+			"key": "lemmatize_oov",
+			"value": "True"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
